@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zero To Hero</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Logo -->
+    <div class="logo">
+      <img src="./media/IMG_20250906_164819_897.jpg" alt="Zero To Hero Logo">
+    </div>
+
+    <!-- Headline -->
+    <h2 class="headline">⚡ ZERO TO HERO ⚡</h2>
+
+    <!-- Sub text -->
+    <p class="text">🔥Learn. Trade. Grow🔥</p>
+    <p class="text">⚡Step-by-step options trading education⚡</p>
+    <p class="text">💯 Beginners & intermediates. 💯</p>
+    <p class="text">👇Join Free Telegram👇</p>
+
+    <!-- Button -->
+    <div class="btn-wrapper">
+      <a href="https://t.me/+PIWsgZOtifE2NDI9" class="cta-btn">
+        <span class="telegram-icon">📩</span> Join Now For Free
+      </a>
+    </div>
+
+    <!-- Hurry up -->
+    <h3 class="hurry">HURRY UP...!</h3>
+
+    <!-- Countdown Box -->
+<div class="countdown-box">
+  <span id="countdown">10</span> <!-- 10 seconds demo -->
+</div>
+
+<script>
+  let time = 10; // कितने seconds से start करना है
+  const display = document.getElementById("countdown");
+
+  const timer = setInterval(() => {
+    if (time > 0) {
+      time--;
+      display.textContent = time;
+    } else {
+      clearInterval(timer);
+      // countdown खत्म होते ही redirect
+      window.location.href = "https://t.me/+PIWsgZOtifE2NDI9"; 
+    }
+  }, 1000);
+</script>
+
+</body>
+</html>

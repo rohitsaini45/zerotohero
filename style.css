@@ -1,0 +1,99 @@
+/* General styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000000; /* black background */
+  color: #fff;
+  text-align: center;
+}
+
+
+.headline {
+  font-family: system-ui;
+  font-size: xx-large;
+}
+/* Container */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Logo */
+.logo img {
+  width: 180px;
+  height: auto;
+  margin: 0 auto 20px;
+  display: block;
+  border-radius: 61px;
+}
+
+/* Headline */
+.headline {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 15px 0;
+  color: #fff;
+}
+
+/* Text */
+.text {
+  font-size: 18px;
+  margin: 8px 0;
+
+}
+
+/* Button wrapper */
+.btn-wrapper {
+  margin: 25px 0;
+}
+
+/* CTA button */
+.cta-btn {
+  display: inline-block;
+  background: linear-gradient(90deg, red, #ff4d4d);
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(255,0,0,0.4);
+}
+
+.cta-btn .telegram-icon {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+/* Hurry text */
+.hurry {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Countdown Box */
+.countdown-box {
+  margin: 20px auto;
+  display: inline-block;
+  padding: 15px 30px;
+  border: 2px dashed red;
+  background: #0d47a1; /* blue box */
+  border-radius: 8px;
+}
+
+.countdown-box span {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .headline { font-size: xx-large; }
+  .text { font-size: xx-large;
+        font-family: sans-serif; }
+  .cta-btn { font-size: 16px; padding: 12px 18px; }
+  .countdown-box span { font-size: 32px; }
+}
